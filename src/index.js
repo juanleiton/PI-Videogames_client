@@ -6,10 +6,10 @@ import "./index.css";
 import App from "./App.js";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store.js";
-import axios from "axios";
+// import axios from "axios";
 
 // axios.default.baseURL = "http://localhost:3001";
-axios.default.baseURL = "https://pi-videogamesapi-production.up.railway.app/";
+// axios.default.baseURL = "https://pi-videogamesapi-production.up.railway.app/";
 
 ReactDOM.render(
   <BrowserRouter>
