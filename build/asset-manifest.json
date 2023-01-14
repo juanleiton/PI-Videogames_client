@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.88b8c0fc.chunk.css",
+    "main.js": "/static/js/main.db9976be.chunk.js",
+    "main.js.map": "/static/js/main.db9976be.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7199751e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7199751e.js.map",
+    "static/js/2.11234e9a.chunk.js": "/static/js/2.11234e9a.chunk.js",
+    "static/js/2.11234e9a.chunk.js.map": "/static/js/2.11234e9a.chunk.js.map",
+    "static/js/3.bbcdbc55.chunk.js": "/static/js/3.bbcdbc55.chunk.js",
+    "static/js/3.bbcdbc55.chunk.js.map": "/static/js/3.bbcdbc55.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.88b8c0fc.chunk.css.map": "/static/css/main.88b8c0fc.chunk.css.map",
+    "static/js/2.11234e9a.chunk.js.LICENSE.txt": "/static/js/2.11234e9a.chunk.js.LICENSE.txt",
+    "static/media/NavBar.css": "/static/media/Henrygames-navbar-background.e11ed4c2.png",
+    "static/media/Welcome.css": "/static/media/Henrygames-welcome-background.2fb1fcb4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7199751e.js",
+    "static/js/2.11234e9a.chunk.js",
+    "static/css/main.88b8c0fc.chunk.css",
+    "static/js/main.db9976be.chunk.js"
+  ]
+}
