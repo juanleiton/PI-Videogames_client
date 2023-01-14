@@ -39,7 +39,7 @@ const NewGame = () => {
   const handleSubmit = async () => {
     const cancelSubmit = Object.values(errors).some(field => field !== "");
     if(cancelSubmit) return setResponseSubmit("Form submission was canceled, please check provided data.");
-    const response = await axios.post("http://localhost:3001/videogame", newGame);
+    const response = await axios.post("/videogame", newGame);
     setNewGame(cleanNewGame);
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => checkbox.checked = false);
     setResponseSubmit(response.data.msg);
