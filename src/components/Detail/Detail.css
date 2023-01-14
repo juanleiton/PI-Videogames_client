@@ -1,0 +1,125 @@
+.detail-container {
+  border-top: thick solid rgb(238, 45, 45);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1% 1%;
+}
+
+.detail {
+  background-color: rgb(112, 106, 106);
+  height: 165vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 7%;
+}
+
+.detail-image-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.detail-image {
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.detail-title {
+  color: rgb(255, 255, 0);
+  margin-bottom: 0;
+}
+
+.plot-container {
+  width: 80%;
+  padding: 0 2%;
+}
+
+.detail-main-container {
+  margin: 0;
+  padding: 2.5% 0 0;
+}
+
+.detail-r-r {
+  margin: 0;
+}
+
+.detail-genres-container, .detail-platforms-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.detail-genres-title, .detail-platforms-title {
+  margin: 0;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.detail-genres, .detail-platforms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-genre, .detail-platform {
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(238, 45, 45);
+  white-space: nowrap;
+}
+
+.detail-no-genres, .detail-no-platforms {
+  margin: 0;
+}
+
+.game-not-found {
+  color:rgb(255, 255, 0);
+}
+
+.detail-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 2.5% 0 0.5%;
+}
+
+.detail-button {
+  background-color: rgb(238, 45, 45);
+  border:thin solid rgb(238, 45, 45);
+  font: inherit;
+  font-size: larger;
+  color: inherit;
+  height: 100%;
+  width: 30%;
+  margin: 2%;
+  cursor: pointer;
+}
+
+.detail-button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: thin solid rgba(255, 255, 255, 0.1);
+  cursor: default;
+}
+
+.detail-output-container {
+  margin: 0;
+  min-height: 2.5%;
+  max-height: 2.5%;
+}
+
+.detail-output {
+  margin: 0;
+  color:rgb(255, 255, 0);
+}
+
+.detail-no-output {
+  margin: 0;
+  visibility: hidden;
+}

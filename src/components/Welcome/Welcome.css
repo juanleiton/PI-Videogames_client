@@ -1,0 +1,32 @@
+.welcome {
+  background-image: url(../../assets/images/Henrygames-welcome-background.png);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.welcome-button-container {
+  min-height: 10%;
+  max-height: 10%;
+  min-width: 16%;
+  max-width: 16%;
+  display: flex;
+  align-items: center;
+  border-radius: 4%;
+  padding-bottom: 12%;
+}
+
+.welcome-button {
+  background-color: rgb(238, 45, 45);
+  border:thin solid rgb(238, 45, 45);
+  font: inherit;
+  font-size: larger;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  padding: 8% 0;
+  border-radius: 4%;
+  cursor: pointer;
+}

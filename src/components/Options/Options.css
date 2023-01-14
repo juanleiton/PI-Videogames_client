@@ -1,0 +1,65 @@
+.options {
+  padding-top: 0.1%;
+}
+
+.option-container {
+  display: flex;
+  background-color: rgb(238, 45, 45);
+  padding-left: 2%;
+  margin-top: 2%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1%;
+}
+
+.sort-by {
+  padding-right: 0%;
+}
+
+.order {
+  padding-right: 2.5%;
+}
+
+.show {
+  padding-right: 4.5%;
+}
+
+.genres {
+  padding-right: 2.5%;
+}
+
+.option-genres {
+  height: 32vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(238, 45, 45);
+  padding-left: 2%;
+  margin-top: 2%;
+}
+
+.filter-genres {
+  columns: 2;
+}
+
+.filter-genre {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.option-input-container {
+  cursor: pointer;
+}
+
+.option-input {
+  cursor: pointer;
+}
+
+.genres-not-found {
+  background-color: rgb(27, 27, 27);
+  color:rgb(255, 255, 0);
+}

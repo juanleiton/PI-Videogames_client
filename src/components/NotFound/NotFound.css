@@ -1,0 +1,43 @@
+.not-found {
+  background-color: rgb(27, 27, 27);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-image-container {
+  width: 14vw;
+}
+
+.not-found-image {
+  height: 100%;
+  width: 100%;
+}
+
+.not-found-title {
+  margin: 0;
+}
+
+.not-found-button-container {
+  min-height: 10%;
+  max-height: 10%;
+  min-width: 16%;
+  max-width: 16%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 6%;
+}
+
+.not-found-button {
+  background-color: rgb(238, 45, 45);
+  border:thin solid rgb(238, 45, 45);
+  font: inherit;
+  font-size: larger;
+  color: inherit;
+  height: 85%;
+  width: 100%;
+  cursor: pointer;
+}
