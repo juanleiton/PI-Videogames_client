@@ -51,7 +51,7 @@ const Options = ({ genres, sort, order, filterOrigin, filterGenres, handleFilter
         <div className="option-genres">
           <h4 className="genres">Genres</h4>
           <div className="filter-genres">
-            {genres?.length > 0 ? genres.map(genre => {
+            {genres?.length > 0 ? genres?.map(genre => {
               return(
                 <div className="filter-genre" key={`options-genres-div-${genre.id}`}>
                   <input className="option-input" key={`options-genres-input-${genre.id}`} id={`options-genres-${genre.id}`} type="checkbox" name={genre.name} onChange={handleFilterGenres} checked={filterGenres.includes(genre.name) ? true : false}/>
