@@ -1,35 +1,35 @@
 <div align="left">
-  <a href="url">
+  <a href="https://www.soyhenry.com/">
     <img src="https://user-images.githubusercontent.com/108427945/220423842-b40a485f-734b-418e-81f7-6ddfa23acd99.png" width="200" >
   </a>
 </div>
 
 # **HenryGames** #
-### Proyecto individual desarrollado en Henry, "bootcamp" de desarrollo Web. ###
+### Individual project developed in Henry, Web development bootcamp. ###
 <div align="center">
-  <a href="url">
+  <a href="https://pi-videogamesclient-production.up.railway.app/">
     <img src="https://user-images.githubusercontent.com/108427945/220424776-f2c06892-dc47-4073-a475-5eb41ff8927c.png" width="500" >
   </a>
 </div>
 
-### Importante ⚠️ ###
-Para efectos del despliegue de la aplicación, se dispuso de dos repositorios:
-- Repositorio del servidor: https://github.com/juanleiton/PI-Videogames_api
-- Repositorio del cliente: https://github.com/juanleiton/PI-Videogames_client
+### Important ⚠️ ###
+For deployment purposes, two repos were used:
+- API: https://github.com/juanleiton/PI-Videogames_api
+- Client: https://github.com/juanleiton/PI-Videogames_client
 
-### Propósito 🏁 ###
-Desarrollar una **aplicación Web full stack** que recibe datos de una API externa de videojuegos. 🎮
+### Goal 🏁 ###
+Develop a **full stack Web app** that takes data from an external videogame API. 🎮
 
-### Funcionalidades ✔️ ###
-- 🚪 Vista principal, en la que se visualizan TODOS los videojuegos, independientemente de si fueron o no creados por el usuario.
-- 🔍 Barra de búsqueda presente en todas las vistas, mediante la cual se pueden buscar videojuegos cuyo título contenga el texto introducido. Los resultados incluyen tanto los videojuegos provenientes de la API, como aquellos añadidos por el usuario.
-- 📑 Vista de detalle, en la que el usuario puede visualizar la información completa de un videojuego en particular.
-- 🗐 Paginación dinámica, tanto en la vista principal, como en la vista de resultados de búsqueda. Funciona independientemente de los filtros u ordenamientos que se encuentren activos o del número de elementos presentes.
-- 🎚️ Filtros y ordenamientos combinados en las vistas principal y de resultados de búsqueda. El usuario puede elegir entre visualizar todos los videojuegos, sólo los creados por él, o sólo los de la aplicación. Es posible filtrar por uno o más géneros. Así mismo, se pueden ordenar los videojuegos por título o por puntuación, de manera ascendente y descendente; el ordenamiento ascendente por título está seleccionado por defecto.
-- ➕ CRUD completo. Además de poder visualizar y añadir videojuegos, es posible crear o eliminar un videojuego ya existente, esto es posible mediante dos botones en la vista de detalle, los cuales están deshabilitados si el videojuego en cuestión NO fue añadido por el usuario.
-- ⛔ Validación de datos en tiempo real al añadir o actualizar videojuegos. El botón que permite enviar el formulario es habilitado o deshabilidato dependiendo de si los datos introducidos por el usuario cumplen o no con ciertos parámetros que se detallan debajo de cada campo; por ejemplo, cuando el número de caracteres del título supera el máximo permitido.
+### Features ✔️ ###
+- 🚪 Main view, in which all videogames are visualized, whether they were added by the user or not.
+- 🔍 Searchbar on every view, by which videogames whose title contains the entered text are returned. Results include videogames from the API, as well as those added by the user.
+- 📑 Detail view, in which further information for a particular videocame can be visualized.
+- 🗐 Dynamic paging, regardless of the number of results or the selected filters and ordering.
+- 🎚️ Combined filters and ordering in the main view, as well as in the search view. The user can choose between visualizing all videogames, only those created by the him/her, or only those returned by the external API. It is also possible to filter by one or more genres, and sort either by title or rating, in both ascending and descending order; ascending sorting by title is selected by default.
+- ➕ CRUD. In addition to viewing and adding videogames, it is also possible to create or delete an already existing one, this can be done through a couple of buttons in the detail view, which are disabled if the videogame in question was not added by the user.
+- ⛔ Real-time data validation when adding or updating videogames. The Submit button is disabled/enabled depending on whether the entered data meet certain criteria or not, which is detailed under each field; for example, when the number of characters in the title exceeds the maximum allowed.
 
-### Tecnologías 🖥️ ###
+### Tools & technologies 🖥️ ###
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
   <img src="https://user-images.githubusercontent.com/108427945/220447577-2d40e53b-d911-4919-9df8-1a832e7264e1.png" width="50" >
  </a>
@@ -58,26 +58,25 @@ Desarrollar una **aplicación Web full stack** que recibe datos de una API exter
   <img src="https://user-images.githubusercontent.com/108427945/220451188-0dd37557-2067-4058-b6bc-eb14377f334c.png" width="50" >
  </a>
 
-### Cómo ejecutar el proyecto localmente ⚙️ ###
-1. Instalar PostgreSQL.
-2. Crear una base de datos con el nombre "videogames".
-3. Dentro de "PI-Videogames_api" crear un archivo .env, luego copiar y pegar en él el siguiente código:
+### How to run this project locally ⚙️ ###
+1. Install PostgreSQL.
+2. Create a database with the name "videogames".
+3. Inside "PI-Videogames_api", create a .env file, then copy and paste the following:
 ```
-DB_USER={usuario}
-DB_PASSWORD={contraseña}
+DB_USER={user}
+DB_PASSWORD={password}
 DB_HOST=localhost
 API_KEY=7a8e8bb3505d4946bdffee2a3ef9eb56
 
-# Reemplazar {usuario} y {contraseña} con las credenciales de Postgres propias.
+# Replace {user} and {password} with your own Postgres credentials.
 ```
-4. Con el administrador de paquetes npm, dentro de "PI-Videogames_api" y "PI-Videogames_client" ejecutar el siguiente comando:
-
+4. Using the NPM package manager, inside "PI-Videogames_api" and "PI-Videogames_client" run the following command:
 ```
 npm install
 ```
-5. Una vez instaladas todas las dependencias correctamente, ejecutar el siguiente comando, primero en "PI-Videogames_api" y luego en "PI-Videogames_client":
+5. Once all dependencies have been correctly installed, run the following command, first in "PI-Videogames_api" and then in "PI-Videogames_client":
 ```
 npm start
 ```
-### Cómo contactar al desarrollador 📫 ###
-Si surge algún inconveniente durante la ejecución de este proyecto 🚩, o ante cualquier inquietud relacionada con él ❓, escribir a jgleitonl@gmail.com 📧
+### How to reach me 📫 ###
+If any trouble arises while running this project 🚩, or to address any related concerns ❓, email me 📧 at jgleitonl@gmail.com.
