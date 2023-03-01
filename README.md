@@ -66,16 +66,18 @@ Develop a **full stack Web app** that takes data from an external videogame API.
 DB_USER={user}
 DB_PASSWORD={password}
 DB_HOST=localhost
+PORT=3001
 API_KEY=7a8e8bb3505d4946bdffee2a3ef9eb56
 
 # Replace {user} and {password} with your own Postgres credentials.
 ```
 4. Go to "PI-Videogames_api/src/db.js", uncomment lines 10-13 and comment lines 15-18.
-5. Using the NPM package manager, inside "PI-Videogames_api" and "PI-Videogames_client" run the following command:
+5. Go to "PI-Videogames_client/src/index.js", uncomment line 11 and comment line 12.
+6. Using the NPM package manager, inside "PI-Videogames_api" and "PI-Videogames_client" run the following command:
 ```
 npm install
 ```
-6. Once all dependencies have been correctly installed, run the following command, first in "PI-Videogames_api" and then in "PI-Videogames_client":
+7. Once all dependencies have been correctly installed, run the following command, first in "PI-Videogames_api" and then in "PI-Videogames_client":
 ```
 npm start
 ```
