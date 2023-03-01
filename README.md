@@ -70,11 +70,12 @@ API_KEY=7a8e8bb3505d4946bdffee2a3ef9eb56
 
 # Replace {user} and {password} with your own Postgres credentials.
 ```
-4. Using the NPM package manager, inside "PI-Videogames_api" and "PI-Videogames_client" run the following command:
+4. Go to "PI-Videogames_api/src/db.js", uncomment lines 10-13 and comment lines 15-18.
+5. Using the NPM package manager, inside "PI-Videogames_api" and "PI-Videogames_client" run the following command:
 ```
 npm install
 ```
-5. Once all dependencies have been correctly installed, run the following command, first in "PI-Videogames_api" and then in "PI-Videogames_client":
+6. Once all dependencies have been correctly installed, run the following command, first in "PI-Videogames_api" and then in "PI-Videogames_client":
 ```
 npm start
 ```
