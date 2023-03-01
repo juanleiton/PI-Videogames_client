@@ -18,7 +18,7 @@ import {
 export const getAllGenres = () => {
   return async dispatch => {
     try {
-      let response = await axios.get(`https://pi-videogamesapi-production.up.railway.app/genres`);
+      let response = await axios.get(`genres`);
     dispatch({type: GET_ALL_GENRES, payload: response.data});
     } catch (error) {
       console.log(error);
@@ -30,7 +30,7 @@ export const getAllGenres = () => {
 export const getAllPlatforms = () => {
   return async dispatch => {
     try {
-      let response = await axios.get(`https://pi-videogamesapi-production.up.railway.app/platforms`);
+      let response = await axios.get(`platforms`);
       dispatch({type: GET_ALL_PLATFORMS, payload: response.data});
     } catch (error) {
       console.log(error);
@@ -42,7 +42,7 @@ export const getAllPlatforms = () => {
 export const getAllGames = () => {
   return async dispatch => {
     try {
-      let response = await axios.get(`https://pi-videogamesapi-production.up.railway.app/videogames`);
+      let response = await axios.get(`videogames`);
       dispatch({type: GET_ALL_GAMES, payload: response.data});
     } catch (error) {
       console.log(error);
@@ -54,7 +54,7 @@ export const getAllGames = () => {
 export const searchGames = name => {
   return async dispatch => {
     try {
-      let response = await axios.get(`https://pi-videogamesapi-production.up.railway.app/videogames?name=${name}`);
+      let response = await axios.get(`videogames?name=${name}`);
       dispatch({type: SEARCH_GAMES, payload: response.data});
     } catch (error) {
       console.log(error);
@@ -66,7 +66,7 @@ export const searchGames = name => {
 export const getDetail = id => {
   return async dispatch => {
     try {
-      let response = await axios.get(`https://pi-videogamesapi-production.up.railway.app/videogame/${id}`);
+      let response = await axios.get(`videogame/${id}`);
       dispatch({type: GET_DETAIL, payload: response.data});
     } catch (error) {
       console.log(error);

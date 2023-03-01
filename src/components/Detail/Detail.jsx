@@ -18,7 +18,7 @@ const Detail = () => {
   const dispatch = useDispatch();
   const handleDelete = async () => {
     let accept = window.confirm(`Are you sure you want to delete "${game.name}"?`);
-    if(accept) await axios.delete(`https://pi-videogamesapi-production.up.railway.app/videogame/${id}`);
+    if(accept) await axios.delete(`videogame/${id}`);
     dispatch(deleteGame(id));
     setAcceptDelete(accept);
   };

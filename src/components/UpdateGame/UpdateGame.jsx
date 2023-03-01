@@ -51,7 +51,7 @@ const UpdateGame = () => {
   const handleSubmit = async () => {
     const cancelSubmit = Object.values(errors).some(field => field !== "");
     if(cancelSubmit) return setResponseSubmit("Form submission was canceled, please check provided data.");
-    const response = await axios.put(`https://pi-videogamesapi-production.up.railway.app/videogame/${id}`, updateGame);
+    const response = await axios.put(`videogame/${id}`, updateGame);
     setResponseSubmit(response.data.msg);
     if(response.status !== 200) return;
     dispatch(addGame(response.data.updated));
