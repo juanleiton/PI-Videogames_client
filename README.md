@@ -18,14 +18,14 @@ For deployment purposes, two repos were used:
 - Client: https://github.com/juanleiton/PI-Videogames_client
 
 ### Goal 🏁 ###
-Develop a **full stack Web app** that takes data from an external videogame API. 🎮
+Develop a **full-stack Web app** that takes data from an external videogame API 🎮.
 
 ### Features ✔️ ###
 - 🚪 Main view, in which all videogames are visualized, whether they were added by the user or not.
 - 🔍 Searchbar on every view, by which videogames whose title contains the entered text are returned. Results include videogames from the API, as well as those added by the user.
 - 📑 Detail view, in which further information for a particular videocame can be visualized.
 - 🗐 Dynamic paging, regardless of the number of results or the selected filters and ordering.
-- 🎚️ Combined filters and ordering in the main view, as well as in the search view. The user can choose between visualizing all videogames, only those created by the him/her, or only those returned by the external API. It is also possible to filter by one or more genres, and sort either by title or rating, in both ascending and descending order; ascending sorting by title is selected by default.
+- 🎚️ Combined filtering and sorting settings in the main view, as well as in the search view. The user can choose between visualizing all videogames, only those created by the him/her, or only those returned by the external API. It is also possible to filter by one or more genres, and sort either by title or rating, in both ascending and descending order; ascending sorting by title is selected by default.
 - ➕ CRUD. In addition to viewing and adding videogames, it is also possible to create or delete an already existing one, this can be done through a couple of buttons in the detail view, which are disabled if the videogame in question was not added by the user.
 - ⛔ Real-time data validation when adding or updating videogames. The Submit button is disabled/enabled depending on whether the entered data meet certain criteria or not, which is detailed under each field; for example, when the number of characters in the title exceeds the maximum allowed.
 
